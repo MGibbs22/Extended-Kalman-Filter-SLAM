@@ -22,7 +22,7 @@ This class is responsible for the walls within the environment.
     wallPoints - A list of points that are between the start and end ([Point]).
     isWall - A value used for the differentiation between a wall and a point
             (Boolean).
-@funcctions:
+@functions:
     __init__: The constructor
     drawMe: A function used to draw the Wall onto the screen.
 """
@@ -159,7 +159,7 @@ class drawingList:
             
         #for point in self.copy_List:
          #   point.draw_cross()
-
+# Instantiate the testing class
 Test = Testing()
 
 # Denotes the number of points that will be in the wall
@@ -309,6 +309,8 @@ while not done:
     if t == 200: break
     
 # Destroy the Window
-#pygame.quit()
+pygame.quit()
+# Stop the Timer
 Test.stopTimer()
+# Get the Mean Absolute Percentage Error
 print(Test.getMAPE(points_List.points_List, robot.mu, robot.sigma))

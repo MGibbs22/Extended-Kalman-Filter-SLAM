@@ -167,8 +167,8 @@ class Robot:
         sigma - The covariance matrix
         u - A control vector
     @return:
-        muBar - 
-        sigmaBar - 
+        muBar - estimate of mu after motion
+        sigmaBar - estimate of sigma after motion
     """        
     def motionUpdate(self, mu, sigma, u):
         """
